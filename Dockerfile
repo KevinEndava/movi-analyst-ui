@@ -11,12 +11,12 @@ COPY package*.json ./
 
 RUN npm install express ejs superagent --save
 
-ENV BACKEND_URL=10.0.3.4:3000
+ENV BACKEND_URL=10.0.3.4:8000
 
 
 # Bundle app source
 COPY . .
 
-EXPOSE 3000
+EXPOSE 3030
 
 CMD [ "npm", "start" ]
